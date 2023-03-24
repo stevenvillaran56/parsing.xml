@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <Beverage>
-    
+
     <Nescafe>
         <owner> Nestlé </owner>
         <year> 1938 </year>
@@ -56,4 +57,5 @@
            <product id="4"> Nemiroff</product>
            </products>
     </Vodka > 
+    
 </Beverage>

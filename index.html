@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>List of Beverages:</h2>
-
     <button type="button" onclick="loadXMLDoc()">
     Get My List of Beverages</button>
-    
     <table id="demo" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"">
     </table>
-    
     <script>
         function loadXMLDoc() {
             var xmlhttp = new XMLHttpRequest();
@@ -26,13 +24,11 @@
             xmlhttp.open("GET", "beverages.xml", true);
             xmlhttp.send();
         }
-        
         function createTable(xml) {
             var i, xmlDoc, txt;
             
             // Actual XML File Object mode
             xmlDoc = xml.responseXML; 
-
             txt = `
                 <tr>
                     <th>owner</th>
