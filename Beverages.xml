@@ -1,159 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Beverages>
-    <Beverages_name name="coffee " id="1">
-        <class category="Instant Coffee">
-            <type composition="Powder">
-                <BrandName name="Nescafe creamy white" id="1">
-                    <grams>29</grams>
-                    <fat> 4.6 </fat>
-                    <sodium> 84.4 </sodium>
-                    <protein> 0.8 </protein>
-                </BrandName>
-                <BrandName name="Nescafe Creamy latte" id="2">
-                    <grams>28</grams>
-                    <fat> 4.8 </fat>
-                    <sodium> 107 </sodium>
-                    <protein> 0 </protein>
-                </BrandName>
-                <BrandName name="Nescafe Original" id="3">
-                    <grams>29</grams>
-                    <fat> 6.2 </fat>
-                    <sodium> 101.4 </sodium>
-                    <protein> 1.1 </protein>
-                </BrandName >
-                <BrandName name="Nescafe classic" id="4">
-                    <grams>27</grams>
-                    <fat> 1 </fat>
-                    <sodium> 190 </sodium>
-                    <protein> 2 </protein>
-                </BrandName>
-            </type>
-        </class>
-    </Beverages_name>
+    <Nescafe>
+        <owner> Nestlé </owner>
+        <year> 1938 </year>
+        <country> Switzerland </country>
+        <place> Swiss town of Orbe </place>
+        <creator> Max Morgenthaler</creator>
+        <products>
+            <product id="1">Nescafe creamy white</product>
+            <product id="2">Nescafe Creamy latte</product>
+            <product id="3">Nescafe Original</product>
+            <product id="4">Nescafe classic </product>
+        <products>                  
+    </Nescafe>
 
-    <Beverages_name name="juice " id="2">
-        <class category="Minute Maid">
-            <type composition="liquid">
-                <flavor name="Orange" id="1">
-                    <milliliter>250</milliliter>
-                    <sugar> 15 </sugar>
-                    <sodium> 61 </sodium>
-                    <calories> 60 </calories>
-                </flavor>
-                <flavor name="apple " id="2">
-                    <milliliter>250</milliliter>
-                    <sugar> 15 </sugar>
-                    <sodium> 80 </sodium>
-                    <calories> 60 </calories>
-                </flavor>
-                <flavor name="grape " id="3">
-                    <milliliter>240</milliliter>
-                    <sugar> 23 </sugar>
-                    <sodium> 15 </sodium>
-                    <calories> 90 </calories>
-                </flavor >
-                <flavor name="Nescafe classic" id="4">
-                    <milliliter>240</milliliter>
-                    <sugar> 11 </sugar>
-                    <sodium> 55 </sodium>
-                    <calories> 90 </calories>
-                </flavor>
-            </type>
-        </class>
-    </Beverages_name>
+    <MinuteMaid>
+    <owner> The Coca-Cola Company</owner>
+    <year> 1945 </year>
+    <country> United States </country>
+    <place> Sugar Land, Texas </place>
+    <creator > John M. Fox </creator >
+      <products>
+        <product id="1"> AGUAS FRESCAS</product>
+        <product id="2"> ORANGE JUICES</product>
+        <product id="3"> LEMONADES AND FRUIT DRINKS</product>
+        <product id="4"> NVARIETY JUICES</product>
+      </products>                
+    </MinuteMaid>
+    
 
-    <Beverages_name name="Milk " id="3">
-        <class category="nestle">
-            <type composition="liquid">
-                <flavor name="fresh" id="1">
-                    <milliliter>250</milliliter>
-                    <sugar> 11.5 </sugar>
-                    <sodium> 87.5 </sodium>
-                    <protein> 8.8 </protein>
-                </flavor>
-                <flavor name="LowFat " id="2">
-                    <milliliter>250</milliliter>
-                    <sugar> 12.3 </sugar>
-                    <sodium> 102.5 </sodium>
-                    <protein> 8.8 </protein>
-                </flavor>
-                <flavor name="BearBrand " id="3">
-                    <milliliter>200</milliliter>
-                    <sugar> 9.9 </sugar>
-                    <sodium> 107 </sodium>
-                    <protein> 6.2 </protein>
-                </flavor >
-                <flavor name="NonFat" id="4">
-                   <milliliter>250</milliliter>
-                    <sugar> 12.7 </sugar>
-                    <sodium> 110 </sodium>
-                    <protein> 9.0 </protein>
-                </flavor>
-            </type>
-        </class>
-    </Beverages_name>
+    <Nestle>
+        <owner> Nestle</owner>
+        <year> 1866 </year>
+        <country> Switzerland </country>
+        <place> Vevey </place>
+        <creator > JHenri Nestlé</creator >
+          <products>
+            <product id="1"> Milo</product>
+            <product id="2"> KitKat</product>
+            <product id="3"> Nespresso</product>
+            <product id="4"> Maggi</product>
+          </products>
+      </Nestle> 
 
-    <Beverages_name name="alcohol" id="4">
-        <class category="Vodka">
-            <type composition="liquid">
-                <flavor name="smirnoff" id="1">
-                    <milliliter>355</milliliter>
-                    <sugar> 5 </sugar>
-                    <sodium> 25 </sodium>
-                    <protein> 1 </protein>
-                </flavor>
-                <flavor name="absolut " id="2">
-                    <milliliter>100</milliliter>
-                    <calories> 231 </calories>
-                    <sodium> 1 </sodium>
-                    <protein> 0 </protein>
-                </flavor>
-                <flavor name="svedka " id="3">
-                    <milliliter>200</milliliter>
-                    <calories> 97 </calories>
-                    <sodium> 0.4 </sodium>
-                    <protein> 0 </protein>
-                </flavor >
-                <flavor name="soplica " id="4">
-                   <milliliter>100</milliliter>
-                    <Calories > 225 </Calories >
-                    <carbs > 10 </carbs >
-                    <Sugars > 10 </Sugars >
-                </flavor>
-            </type>
-        </class>
-    </Beverages_name>
-
-    <Beverages_name name="wine" id="5">
-        <class category="Barefoot">
-            <type composition="liquid">
-                <Region> California
-                    <flavor name="RedBlend" id="1">
-                        <Size>750ml</Size>
-                        <Type> Red Wine </Type>
-                        <ABV> 10.5% </ABV>
-                    </flavor>
-                    <flavor name="REDMOSCATO " id="2">
-                        <Size>750ml</Size>
-                        <Type> Red Wine </Type>
-                        <ABV> 9% </ABV>
-                    </flavor>
-                    <flavor name="PINKMOSCATO " id="3">
-                        <Size>750ml</Size>
-                        <Type> Red Wine </Type>
-                        <ABV> 9.0% </ABV>
-                    </flavor >
-                    <flavor name="MERLOT " id="4">
-                        <Size>750ml</Size>  
-                        <Type> Red Wine </Type>
-                        <ABV> 13.5% </ABV>
-                    </flavor>
-                </Region>
-            </type>
-        </class>
-    </Beverages_name>
+      <Vodka >
+        <owner> Absolut </owner>
+        <year> 1917  </year>
+        <country> Russia </country>
+        <place> St. Petersburg </place>
+        <creator > Isidore </creator >
+          <products>
+            <product id="1"> Smirnoff</product>
+            <product id="2"> Svedka</product>
+            <product id="3"> Soplica</product>
+            <product id="4"> Nemiroff</product>
+          </products>
+      </Vodka > 
 </Beverages>    
-
-
-
-
