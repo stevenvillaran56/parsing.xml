@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>My CD Collection:</h2>
+    <h2>List of Beverages:</h2>
 
     <button type="button" onclick="loadXMLDoc()">
-    Get my CD collection</button>
+    Get My List of Beverages</button>
     
     <table id="demo" border="1" cellspacing="0" cellpadding="10" width="80%" align="center"">
     </table>
@@ -23,7 +23,7 @@
                     createTable(this);
                 }
             };
-            xmlhttp.open("GET", "cd_catalog.xml", true);
+            xmlhttp.open("GET", "beverages.xml", true);
             xmlhttp.send();
         }
         
@@ -35,35 +35,41 @@
 
             txt = `
                 <tr>
-                    <th>TITLE</th>
-                    <th>ARTIST</th>
-                    <th>COUNTRY</th>
-                    <th>COMPANY</th>
-                    <th>PRICE</th>
-                    <th>YEAR</th>
+                    <th>owner</th>
+                    <th>year</th>
+                    <th>country</th>
+                    <th>place</th>
+                    <th>creator</th>
+                    <th>products</th>
                 </tr>
             `;
-
-            var title = xmlDoc.getElementsByTagName("TITLE");
-            var artist = xmlDoc.getElementsByTagName("ARTIST");
-            var country = xmlDoc.getElementsByTagName("COUNTRY");
-            var company = xmlDoc.getElementsByTagName("COMPANY");
-            var price = xmlDoc.getElementsByTagName("PRICE");
-            var year = xmlDoc.getElementsByTagName("YEAR");
-
-            for (i = 0; i< title.length; i++) {
+            var OWNER = xmlDoc.getElementsByTagName("owner");
+            var YEAR = xmlDoc.getElementsByTagName("year");
+            var COUNTRY = xmlDoc.getElementsByTagName("country");
+            var PLACE = xmlDoc.getElementsByTagName("place");
+            var CREATOR = xmlDoc.getElementsByTagName("creator");
+            var PRODUCTS = xmlDoc.getElementsByTagName("products");
+            for (i = 0; i< OWNER.length; i++) {
                 txt += `
                     <tr>
-                        <td>${title[i].childNodes[0].nodeValue}</td>
-                        <td>${artist[i].childNodes[0].nodeValue}</td>
-                        <td>${country[i].childNodes[0].nodeValue}</td>
-                        <td>${company[i].childNodes[0].nodeValue}</td>
-                        <td>${price[i].childNodes[0].nodeValue}</td>
-                        <td>${year[i].childNodes[0].nodeValue}</td>
+                        <td>${OWNER[i].childNodes[0].nodeValue}</td>
+                        <td>${YEAR[i].childNodes[0].nodeValue}</td>
+                        <td>${COUNTRY[i].childNodes[0].nodeValue}</td>
+                        <td>${PLACE[i].childNodes[0].nodeValue}</td>
+                        <td>${CREATOR[i].childNodes[0].nodeValue}</td>
+                        <td>
+                            <ul>`;
+                                var list = "";
+                                for(j = 0; j < PRODUCTS.length-0;j++){
+                                    list += `<li>${PRODUCTS[i].children[j].childNodes[0].nodeValue}</li>`;
+                                }
+                txt +=`
+                                ${list}
+                            </ul>
+                        </td>
                     </tr>
                 `;                
             }
-
             document.getElementById("demo").innerHTML = txt;
         }
     </script>

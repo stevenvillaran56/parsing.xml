@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Beverages>
+<Beverage>
+    
     <Nescafe>
         <owner> Nestlé </owner>
         <year> 1938 </year>
@@ -7,53 +8,52 @@
         <place> Swiss town of Orbe </place>
         <creator> Max Morgenthaler</creator>
         <products>
-            <product id="1">Nescafe creamy white</product>
-            <product id="2">Nescafe Creamy latte</product>
-            <product id="3">Nescafe Original</product>
-            <product id="4">Nescafe classic </product>
-        <products>                  
-    </Nescafe>
+           <product id="1"> Nescafe creamy white</product>
+           <product id="2"> Nescafe Creamy latte</product>
+           <product id="3"> Nescafe Original</product>
+           <product id="4"> Nescafe classic</product>
+        </products>
+    </Nescafe>  
 
     <MinuteMaid>
-    <owner> The Coca-Cola Company</owner>
-    <year> 1945 </year>
-    <country> United States </country>
-    <place> Sugar Land, Texas </place>
-    <creator > John M. Fox </creator >
-      <products>
-        <product id="1"> AGUAS FRESCAS</product>
-        <product id="2"> ORANGE JUICES</product>
-        <product id="3"> LEMONADES AND FRUIT DRINKS</product>
-        <product id="4"> NVARIETY JUICES</product>
-      </products>                
-    </MinuteMaid>
-    
-
+        <owner> The Coca-Cola Company</owner>
+        <year> 1945 </year>
+        <country> United States </country>
+        <place> Sugar Land, Texas </place>
+        <creator > John M. Fox </creator >
+        <products>
+           <product id="1"> AGUAS FRESCAS</product>
+           <product id="2"> ORANGE JUICES</product>
+           <product id="3"> LEMONADES AND FRUIT DRINKS</product>
+           <product id="4"> NVARIETY JUICES</product>
+        </products>
+    </MinuteMaid>  
+   
     <Nestle>
         <owner> Nestle</owner>
         <year> 1866 </year>
         <country> Switzerland </country>
         <place> Vevey </place>
         <creator > JHenri Nestlé</creator >
-          <products>
+        <products>
             <product id="1"> Milo</product>
             <product id="2"> KitKat</product>
             <product id="3"> Nespresso</product>
             <product id="4"> Maggi</product>
-          </products>
-      </Nestle> 
-
-      <Vodka >
+        </products>
+    </Nestle> 
+   
+    <Vodka >
         <owner> Absolut </owner>
         <year> 1917  </year>
         <country> Russia </country>
         <place> St. Petersburg </place>
         <creator > Isidore </creator >
-          <products>
-            <product id="1"> Smirnoff</product>
-            <product id="2"> Svedka</product>
-            <product id="3"> Soplica</product>
-            <product id="4"> Nemiroff</product>
-          </products>
-      </Vodka > 
-</Beverages>    
+        <products>
+           <product id="1"> Smirnoff</product>
+           <product id="2"> Svedka</product>
+           <product id="3"> Soplica</product>
+           <product id="4"> Nemiroff</product>
+           </products>
+    </Vodka > 
+</Beverage>
